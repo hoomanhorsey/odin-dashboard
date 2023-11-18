@@ -1,7 +1,7 @@
 * {
-    border-style: solid;
+    /* border-style: solid;
     border-width: 1px;
-    border-color: grey;
+    border-color: grey; */
 }
 .body {
     
@@ -68,10 +68,12 @@ li{
     padding: 15px;
 }
 
-.home-icon {
-    background-image: url("./icons/home.svg");
-    height: 60px;
-    width: 60px;
+
+
+.icon-svg {
+    width: 50px;
+    height: 50px;
+    fill: white;
 }
 
 
@@ -123,7 +125,13 @@ li{
     grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
 }
 
+.name-avatar {
+        background-image: url("./icons/wikibw.png");
+        background-size: 150px;
+        background-repeat: no-repeat;
+        background-position: center;
 
+}
 button {
     height: 40px;
     width: 90px;
