@@ -1,13 +1,21 @@
-* {
-    /* border-style: solid;
+/* * {
+    border-style: solid;
     border-width: 1px;
-    border-color: grey; */
-}
+    border-color: lightgrey
+} */
+
+
+
 .body {
-    
+   
 }
 
+.heading-font-size {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
 .container {
+    
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 250px repeat(3, 350px);
@@ -15,9 +23,7 @@
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-    border-style: solid;
-    border-width: 1px;
-    border-color: grey;
+   
 }
 
 .sidebar {
@@ -37,21 +43,28 @@
 .sidebar-head  {
     font-size: 3rem;
     display:grid;
-    gap: 40px;
+    gap: 10px;
     grid-template-columns: 1fr 9fr;
     place-items: center start;
     padding: 20px;
 }
 
 .sidebar-logo {
-    /* background-image: url(./icons/home.svg);
-    background-size: cover; */
+    width: 90px;
+    height: 90px;
+    fill: white;
+    padding-left: 20px;
 }
+
+
 
 .sidebar-title, li {
     color: white;
     font-weight: 700;
     padding: 30px;
+}
+.sidebar-title {
+    padding-left: 10px;
 }
 
 ul {
@@ -62,13 +75,11 @@ li{
     list-style: none;
     font-size: 1.7rem; 
     display: grid;
-    gap: 30px;
+    gap: 40px;
     grid-template-columns: 1fr 9fr;
     place-items: center start;
     padding: 15px;
 }
-
-
 
 .icon-svg {
     width: 50px;
@@ -97,18 +108,18 @@ li{
 }
 .search-div, .name-div  {
     display:grid;
-    place-items: center;
     padding: 10px;
+    align-items: center;
+
 }
-
-
-
-
-
+.search-image, .search-bell-image {
+    width: 30px;
+    height: 30px;
+}
 .search-input {
     display: grid;
-    place-items: center;
 }
+
 .search-bar {
     height: 30px;
     width: 600px;
@@ -116,15 +127,22 @@ li{
     border-radius: 15px;
     border: none;
     font-size: 2rem;
-
 }
+ 
 
 .header-name {
     display: grid;
     height: 1fr;
-    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 5fr 1fr 1fr 1fr;
 }
 
+.header-avatar {
+    background-image: url("./icons/wikibw.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
 .name-avatar {
         background-image: url("./icons/wikibw.png");
         background-size: 150px;
@@ -132,6 +150,13 @@ li{
         background-position: center;
 
 }
+
+.name-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+   
+}
+
 button {
     height: 40px;
     width: 90px;
@@ -147,7 +172,7 @@ button {
 
 .projects {
 
-    background-color:lightgoldenrodyellow;
+    background-color:lightblue;
     grid-column: 2/6;
     grid-row: 2/5;
 
@@ -198,9 +223,16 @@ button {
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr;
     place-items: center;
-
 }
 
+.article-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.rotate {
+    transform: rotate(270deg);
+}
 
 .projects-right {
     display:grid;
@@ -218,15 +250,23 @@ button {
 
 .announcements {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 5px 1fr 5px 1fr;
     gap: 15px;
     padding-top: 15px;
+    background-color: white;
 }
 
 .announcement {
     display: grid;
     grid-template-rows: 1fr 3fr;
+    padding: 30px;
 }
+
+.announcement-sep {
+    border-top: 2px solid lightgrey;
+    margin: 0px 30px; 
+}
+
 
 .announcement-heading {
     font-weight: 700;
@@ -235,6 +275,7 @@ button {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     gap: 15px;
+    background-color: white;
 }
 
 
@@ -242,6 +283,34 @@ button {
     display: grid;
     grid-template-columns: 1fr 4fr;
     height: 50px;
+}
+
+.trend-avatar {
+    width: 100px;
+    height: 100px;
+    background-image: url("./icons/wikibw.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 30px ;
+
+}
+
+
+  
+
+.trend-name {
+    font-size: 1.5rem;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 30px;
+
+}
+
+.grey-font{
+    color: grey;
+    padding: 0px;
+    margin:0px;
 }
 
 
