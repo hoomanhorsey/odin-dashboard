@@ -3,10 +3,12 @@ addEventListener('DOMContentLoaded', () => {
 let btn = document.querySelector('.sidebar-logo');
 
 btn.addEventListener('click', ()=> {
-    console.log('clicked')
-    let all = document.querySelector('*');
-    all.setAttribute('class', 'show-border')
-    console.log(all.style);
+    let allDivs = document.querySelectorAll('div');
+    allDivs.forEach( (allDivs) => {
+        console.log(allDivs.classList)
+        allDivs.classList.add('show-border')
+    })
+    
 
     // if (all.getAttribute('class') === 'show-border') {
     //     console.log('got attbiute')
