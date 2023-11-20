@@ -105,15 +105,19 @@ li{
 .header-search {
     display: grid;
     height: 1fr;
-    grid-template-columns: 1fr 5fr 1fr 1fr 1fr 4fr;
+    grid-template-columns: 1fr 5fr 4fr 1fr 1fr 2fr;
 }
 .search-div, .name-div  {
     display:grid;
     padding: 10px;
     align-items: center;
 }
-
+.search-image {
+    justify-self: end;
+}
 .search-image, .search-bell-image {
+    
+    justify-self: end;
     width: 30px;
     height: 30px;
 
@@ -151,6 +155,12 @@ li{
         background-repeat: no-repeat;
         background-position: center;
 
+}
+
+.name-intro {
+    font-weight: 600;
+    font-size: 1.3rem;
+    align-self: end;
 }
 
 .name-name {
