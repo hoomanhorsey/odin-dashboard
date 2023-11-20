@@ -4,11 +4,7 @@
     border-color: lightgrey
 } */
 
-/* .show-border { 
-    border-style: solid;
-    border-width: 1px;
-    border-color: lightgrey
-} */
+
 
 
 .heading-font-size {
@@ -93,8 +89,9 @@ li{
     grid-row: 1 / 2;
     display: grid;
     grid-template-rows: 3fr 5fr;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
-;}
+}
 .header-search {
     display: grid;
     height: 1fr;
@@ -109,7 +106,6 @@ li{
     justify-self: end;
 }
 .search-image, .search-bell-image {
-    
     justify-self: end;
     width: 30px;
     height: 30px;
@@ -121,8 +117,8 @@ li{
 
 .search-bar {
     height: 30px;
-    width: 600px;
-    background-color: lightgrey;
+    width: 600px;   
+    background-color: #e2e8f0;
     border-radius: 15px;
     border: none;
     font-size: 2rem;
@@ -133,6 +129,7 @@ li{
     display: grid;
     height: 1fr;
     grid-template-columns: 2fr 5fr 1fr 1fr 1fr;
+    
 }
 
 .header-avatar {
@@ -188,11 +185,11 @@ button {
 }
 
 .projects-left {
-    background-color: lightblue;
+    background-color: #e2e8f0;
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 30px 1fr 1fr 1fr;
-    gap: 25px;
+        gap: 40px;
     padding: 25px;   
 }
 
@@ -212,6 +209,7 @@ button {
 
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;   
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .article-title {
@@ -235,8 +233,6 @@ button {
     height: 40px;
 }
 
-
-
 .rotate {
     transform: rotate(270deg);
 }
@@ -245,7 +241,9 @@ button {
     display:grid;
     grid-template-rows: 30px 1fr 30px 1fr;
     padding: 25px;
-    gap: 20px;
+     gap: 40px;
+
+    background-color: #e2e8f0;
 }
 
 .announcements-title, .trending-title {
@@ -262,6 +260,7 @@ button {
     padding-top: 15px;
     background-color: white;
     border-radius: 4%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
 }
 
@@ -285,12 +284,13 @@ button {
     color: grey;
 }
 
-.trending {
+    .trending {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     gap: 15px;
     background-color: white;
     border-radius: 4%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
 }
 
@@ -300,6 +300,7 @@ button {
     grid-template-columns: 1fr 4fr;
     height: 50px;
 }
+
 
 .trend-avatar {
     width: 100px;
