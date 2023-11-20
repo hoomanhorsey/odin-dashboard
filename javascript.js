@@ -10,10 +10,6 @@ btn.addEventListener('click', ()=> {
     })
     
 
-    // if (all.getAttribute('class') === 'show-border') {
-    //     console.log('got attbiute')
-    //     all.setAttrbute('class', 'hide-border')
-    // }
 
 
 
