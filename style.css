@@ -100,7 +100,7 @@ li{
 .header-search {
     display: grid;
     height: 1fr;
-    grid-template-columns: 1fr 5fr 4fr 1.5fr 1.5fr 2fr;
+    grid-template-columns: 1fr 5fr 4fr 1.5fr minmax(150px, 1.5fr) 2fr;
 }
 .search-div, .name-div  {
     display:grid;
