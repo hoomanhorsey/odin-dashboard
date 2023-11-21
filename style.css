@@ -100,13 +100,16 @@ li{
 .header-search {
     display: grid;
     height: 1fr;
-    grid-template-columns: 1fr 5fr 4fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 5fr 4fr 1.5fr 1.5fr 2fr;
 }
 .search-div, .name-div  {
     display:grid;
     padding: 10px;
     align-items: center;
 }
+
+
+
 .search-image {
     justify-self: end;
 }
@@ -133,7 +136,7 @@ li{
 .header-name {
     display: grid;
     height: 1fr;
-    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    grid-template-columns: minmax(150px, 1.5fr) minmax(200px, 5fr) 1fr 1fr 1fr;
     
 }
 
@@ -146,7 +149,7 @@ li{
 }
 .name-avatar {
         background-image: url("./icons/wikibw.png");
-        background-size: 150px;
+        background-size: 140px;
         background-repeat: no-repeat;
         background-position: center;
 
