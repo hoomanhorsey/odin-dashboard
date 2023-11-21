@@ -17,6 +17,7 @@
     font-weight: 700;
 }
 .container {
+    justify-content: left;
     
     display: grid;
     grid-template-columns: repeat(5, 1fr);
